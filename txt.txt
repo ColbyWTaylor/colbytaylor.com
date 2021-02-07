@@ -1,0 +1,3 @@
+https://medium.com/@nataliecardot/easily-deploy-a-create-react-app-project-to-github-pages-280529adb086
+
+useless file to push "docs" folder to github
