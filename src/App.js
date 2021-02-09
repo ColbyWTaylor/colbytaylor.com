@@ -1,6 +1,32 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+function Routes() {
+  return (
+    <>
+      {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/users">
+          <Users />
+        </Route>
+        <Route path="/Register">
+          <Register />
+        </Route>
+        <Route path="/Login">
+          <Login />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -19,32 +45,22 @@ function App() {
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/Register">
-            <Home />
-          </Route>
-          <Route path="/Login">
-            <Home />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Routes />
       </div>
     </Router>
   );
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <h2>Welcome</h2>
+      <h1>Login</h1>
+      <Link to="/login">Login Link</Link>
+      <h1>Register</h1>
+      <Link to="/register">Register Link</Link>
+    </>
+  );
 }
 
 function About() {
