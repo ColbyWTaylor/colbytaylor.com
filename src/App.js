@@ -32,6 +32,7 @@ function App() {
     <Router>
       <div className="content">
         <nav>
+          <Header />
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -93,6 +94,14 @@ const Register = () => {
   return (
     <>
       <h1>Register</h1>
+    </>
+  );
+};
+
+const Header = () => {
+  return (
+    <>
+      <h1>Header</h1>
     </>
   );
 };

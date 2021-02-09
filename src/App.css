@@ -47,12 +47,17 @@ body {
 }
 
 .content {
-  display: grid;
+  display: flex;
   align-items: center;
-  min-height: 100vh;
-  background-color: chocolate;
+  /* min-height: 100vh; */
+  background-color: black;
+  color: white;
   /* width: 50%;
   min-width: 600px;
   max-width: 800px;
   margin: auto; */
+}
+
+.content>li {
+  color: white;
 }
