@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.home {
+  background-color: black;
+  color: white;
+}
+
+body {
+  padding: auto 20%;
+}
+
+.content {
+  width: 50%;
+  min-width: 600px;
+  max-width: 800px;
+  margin: auto;
+}

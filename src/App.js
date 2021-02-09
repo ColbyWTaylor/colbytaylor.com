@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="content">
         <nav>
           <ul>
             <li>
@@ -39,7 +39,7 @@ function App() {
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <h2>App Home</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eos
@@ -47,7 +47,7 @@ function Home() {
         sunt? Ut dolorum commodi reiciendis modi, laborum officia incidunt
         tenetur maiores?
       </p>
-    </>
+    </div>
   );
 }
 
