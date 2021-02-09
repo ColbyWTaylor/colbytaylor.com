@@ -38,7 +38,17 @@ function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <h2>App Home</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eos
+        beatae exercitationem omnis ipsa earum optio eum perferendis veniam
+        sunt? Ut dolorum commodi reiciendis modi, laborum officia incidunt
+        tenetur maiores?
+      </p>
+    </>
+  );
 }
 
 function About() {
