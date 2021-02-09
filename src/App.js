@@ -28,6 +28,12 @@ function App() {
           <Route path="/users">
             <Users />
           </Route>
+          <Route path="/Register">
+            <Home />
+          </Route>
+          <Route path="/Login">
+            <Home />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
@@ -38,6 +44,10 @@ function App() {
 }
 
 function Home() {
+  return <h2>Home</h2>;
+}
+
+function About() {
   return (
     <div className="home">
       <h2>App Home</h2>
@@ -51,12 +61,24 @@ function Home() {
   );
 }
 
-function About() {
-  return <h2>About</h2>;
-}
-
 function Users() {
   return <h2>Users</h2>;
 }
+
+const Login = () => {
+  return (
+    <>
+      <h1>Login</h1>
+    </>
+  );
+};
+
+const Register = () => {
+  return (
+    <>
+      <h1>Register</h1>
+    </>
+  );
+};
 
 export default App;
