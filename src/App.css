@@ -48,7 +48,7 @@ body {
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: auto center;
   /* min-height: 100vh; */
   background-color: black;
   color: white;
@@ -62,7 +62,13 @@ body {
   color: white;
 }
 
-.content>li:visited {
+li {
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+}
+
+li:visited {
   color: white;
 }
 
@@ -71,4 +77,9 @@ body {
   font-weight: 500;
   text-decoration: none;
   list-style: none;
+}
+
+nav {
+  width: 100%;
+  align-items: center;
 }

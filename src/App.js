@@ -28,37 +28,37 @@ function Routes() {
   );
 }
 
-function App() {
+function Nav() {
   const [loggedInStatus, setLoggedInStatus] = useState(false);
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/users">Users</Link>
+        </li>
+        {!loggedInStatus && (
+          <li>
+            <Link to="/users">Log In</Link>
+          </li>
+        )}
+
+        <button onClick={() => setLoggedInStatus(!loggedInStatus)}>
+          Log In
+        </button>
+      </ul>
+    </nav>
+  );
+}
+
+function App() {
   return (
     <Router>
       <div className="content">
-        <nav>
-          <Header siteName="Colby Taylor" />
-          <ul>
-            <li>
-              <Link to="/" className="logo">
-                Colby Taylor
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-            {!loggedInStatus && (
-              <li>
-                <Link to="/users">Log In</Link>
-              </li>
-            )}
-
-            <button onClick={() => setLoggedInStatus(!loggedInStatus)}>
-              Log In
-            </button>
-          </ul>
-        </nav>
-
+        <Header siteName="Colby Taylor" />
+        <Nav />
         <Routes />
       </div>
     </Router>
@@ -70,6 +70,7 @@ function Home() {
     <>
       <h2>You are home</h2>
       <p>You are logged in</p>
+      <p>This will be a location to display various cards showcasing </p>
     </>
   );
 }
