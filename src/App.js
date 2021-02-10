@@ -30,7 +30,6 @@ function Routes() {
 
 function App() {
   const [loggedInStatus, setLoggedInStatus] = useState(false);
-
   return (
     <Router>
       <div className="content">
@@ -46,6 +45,15 @@ function App() {
             <li>
               <Link to="/users">Users</Link>
             </li>
+            {!loggedInStatus && (
+              <li>
+                <Link to="/users">Log In</Link>
+              </li>
+            )}
+
+            <button onClick={() => setLoggedInStatus(!loggedInStatus)}>
+              Log In
+            </button>
           </ul>
         </nav>
 
@@ -59,10 +67,7 @@ function Home() {
   return (
     <>
       <h2>Welcome</h2>
-      <h1>Login</h1>
-      <Link to="/login">Login Link</Link>
-      <h1>Register</h1>
-      <Link to="/register">Register Link</Link>
+      <p>You are logged in</p>
     </>
   );
 }
