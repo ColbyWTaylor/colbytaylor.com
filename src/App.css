@@ -61,3 +61,12 @@ body {
 .content>li {
   color: white;
 }
+
+.content>li:visited {
+  color: white;
+}
+
+.logo .logo:visited {
+  color: white;
+  font-weight: 500;
+}
