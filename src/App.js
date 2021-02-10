@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useState } from "react";
 
 function Routes() {
   return (
@@ -28,6 +29,8 @@ function Routes() {
 }
 
 function App() {
+  const [loggedInStatus, setLoggedInStatus] = useState(false);
+
   return (
     <Router>
       <div className="content">
