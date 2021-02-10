@@ -34,7 +34,7 @@ function App() {
     <Router>
       <div className="content">
         <nav>
-          <Header />
+          <Header siteName="Colby Taylor" />
           <ul>
             <li>
               <Link to="/" className="logo">
@@ -68,7 +68,7 @@ function App() {
 function Home() {
   return (
     <>
-      <h2>Welcome</h2>
+      <h2>You are home</h2>
       <p>You are logged in</p>
     </>
   );
@@ -108,10 +108,12 @@ const Register = () => {
   );
 };
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
-      <h1>Header</h1>
+      <Link to="/" className="logo">
+        <h1>{props.siteName}</h1>
+      </Link>
     </>
   );
 };

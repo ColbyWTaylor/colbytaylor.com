@@ -66,7 +66,9 @@ body {
   color: white;
 }
 
-.logo .logo:visited {
+.logo, .logo:visited, li>.logo {
   color: white;
   font-weight: 500;
+  text-decoration: none;
+  list-style: none;
 }
