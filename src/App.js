@@ -70,7 +70,10 @@ function Home() {
     <>
       <h2>You are home</h2>
       <p>You are logged in</p>
-      <p>This will be a location to display various cards showcasing </p>
+      <p>
+        This will be a location to display various cards showcasing latest
+        blogs, services, and projects.
+      </p>
     </>
   );
 }
