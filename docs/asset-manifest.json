@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/colbytaylor.com/static/css/main.6df5300d.chunk.css",
+    "main.css": "/colbytaylor.com/static/css/main.e28196e1.chunk.css",
     "main.js": "/colbytaylor.com/static/js/main.78ba5d2b.chunk.js",
     "main.js.map": "/colbytaylor.com/static/js/main.78ba5d2b.chunk.js.map",
     "runtime-main.js": "/colbytaylor.com/static/js/runtime-main.157b6c09.js",
@@ -10,13 +10,13 @@
     "static/js/3.ea98bace.chunk.js": "/colbytaylor.com/static/js/3.ea98bace.chunk.js",
     "static/js/3.ea98bace.chunk.js.map": "/colbytaylor.com/static/js/3.ea98bace.chunk.js.map",
     "index.html": "/colbytaylor.com/index.html",
-    "static/css/main.6df5300d.chunk.css.map": "/colbytaylor.com/static/css/main.6df5300d.chunk.css.map",
+    "static/css/main.e28196e1.chunk.css.map": "/colbytaylor.com/static/css/main.e28196e1.chunk.css.map",
     "static/js/2.febc9126.chunk.js.LICENSE.txt": "/colbytaylor.com/static/js/2.febc9126.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.157b6c09.js",
     "static/js/2.febc9126.chunk.js",
-    "static/css/main.6df5300d.chunk.css",
+    "static/css/main.e28196e1.chunk.css",
     "static/js/main.78ba5d2b.chunk.js"
   ]
 }
