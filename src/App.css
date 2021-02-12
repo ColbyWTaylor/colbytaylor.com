@@ -77,9 +77,14 @@ li:visited {
   font-weight: 500;
   text-decoration: none;
   list-style: none;
+  margin-left: 30px;
 }
 
 nav {
   width: 100%;
   align-items: center;
+}
+
+a {
+  color: white;
 }
